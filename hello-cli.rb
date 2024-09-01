@@ -5,20 +5,20 @@
 class HelloCli < Formula
   desc ""
   homepage ""
-  version "0.1.5"
+  version "0.1.4"
 
   on_macos do
     on_intel do
-      url "https://github.com/hassaku63/hello-cli/releases/download/v0.1.5/hello-cli_Darwin_x86_64.tar.gz"
-      sha256 "f852a2f05f8495d0ca6cb6773bdfbfa3ae2d8b9186e2d379f0246301f299632d"
+      url "https://github.com/hassaku63/hello-cli/releases/download/v0.1.4/hello-cli_Darwin_x86_64.tar.gz"
+      sha256 "7666e7c77a8e410e08a078ce7699e362fd3c0431ab0fa0ae1d380b491fd29205"
 
       def install
         bin.install "hello"
       end
     end
     on_arm do
-      url "https://github.com/hassaku63/hello-cli/releases/download/v0.1.5/hello-cli_Darwin_arm64.tar.gz"
-      sha256 "83db55ed85851c3fc2fbd2708c11bdcc6f5522b8a84fce6b324a0b6f44393d74"
+      url "https://github.com/hassaku63/hello-cli/releases/download/v0.1.4/hello-cli_Darwin_arm64.tar.gz"
+      sha256 "da06fdc30c341203b279e85ef8e5b66a0e719a42ddaba5574b73201af068975c"
 
       def install
         bin.install "hello"
@@ -29,8 +29,8 @@ class HelloCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hassaku63/hello-cli/releases/download/v0.1.5/hello-cli_Linux_x86_64.tar.gz"
-        sha256 "7605006385cd83b24a44e185dbc3829ca281ab52c8a9f8a8954b385a08eb7455"
+        url "https://github.com/hassaku63/hello-cli/releases/download/v0.1.4/hello-cli_Linux_x86_64.tar.gz"
+        sha256 "96cd6b9b04eb71cd95f82de58d21975c74537b80fe82befedbb5de24912ea0e4"
 
         def install
           bin.install "hello"
@@ -39,8 +39,8 @@ class HelloCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hassaku63/hello-cli/releases/download/v0.1.5/hello-cli_Linux_arm64.tar.gz"
-        sha256 "bca1be10151a6ab0e588191000ce0d87a6c344b1d9a2631e42fbe552dbbf4244"
+        url "https://github.com/hassaku63/hello-cli/releases/download/v0.1.4/hello-cli_Linux_arm64.tar.gz"
+        sha256 "5173547adb728bf5efc9a22fd0b02d2e17bcc0626b91d427db53412a5ad05498"
 
         def install
           bin.install "hello"
